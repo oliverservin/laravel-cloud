@@ -24,6 +24,7 @@ class CreateUsersTable extends Migration
             $table->text('public_worker_key');
             $table->text('private_worker_key');
             $table->string('provider_key_id')->nullable();
+            $table->string('api_token')->nullable();
             $table->timestamp('last_alert_received_at')->nullable();
             $table->timestamps();
         });
